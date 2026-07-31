@@ -3,7 +3,7 @@ function Footer() {
     <footer className="site-footer">
       <div className="footer-content">
         <div className="footer-brand">
-          <div className="brand-name" style={{ color: 'var(--paper)' }}>WoilaTech</div>
+          <div className="brand-name" style={{ color: 'var(--paper)' }}>VERRA</div>
           <p className="footer-tagline">Le registre communautaire des téléphones volés</p>
         </div>
 
