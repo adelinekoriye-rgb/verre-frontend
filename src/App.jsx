@@ -6,6 +6,8 @@ import LoginPage from "./pages/LoginPage";
 import ResellerDashboard from "./pages/ResellerDashboard";
 import WelcomePage from "./pages/WelcomePage";
 import PrivateRoute from "./components/PrivateRoute";
+import Footer from './components/Footer';
+import ContactPage from './pages/ContactPage';
 import "./App.css";
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
         <Link to="/report">Signaler</Link>
         <Link to="/">Vérifier</Link>
         <Link to="/dashboard">Dashboard</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
 
       <Routes>
@@ -27,7 +30,9 @@ function App() {
   <Route path="/" element={<PrivateRoute><VerifyPage /></PrivateRoute>} />
   <Route path="/report" element={<PrivateRoute><ReportPage /></PrivateRoute>} />
   <Route path="/dashboard" element={<PrivateRoute><ResellerDashboard /></PrivateRoute>} />
+  <Route path="/contact" element={<ContactPage />} />
 </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
