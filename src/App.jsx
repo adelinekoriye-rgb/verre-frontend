@@ -6,28 +6,23 @@ import LoginPage from "./pages/LoginPage";
 import ResellerDashboard from "./pages/ResellerDashboard";
 import WelcomePage from "./pages/WelcomePage";
 import PrivateRoute from "./components/PrivateRoute";
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ContactPage from './pages/ContactPage';
+import HomePage from './pages/HomePage';
 import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
-      <nav className="navbar">
-        <span className="navbar-brand">VERRA</span>
-        <Link to="/register">Inscription</Link>
-        <Link to="/login">Connexion</Link>
-        <Link to="/report">Signaler</Link>
-        <Link to="/">Vérifier</Link>
-        <Link to="/dashboard">Dashboard</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
+      <Navbar />
 
       <Routes>
   <Route path="/welcome" element={<WelcomePage />} />
   <Route path="/register" element={<RegisterPage />} />
   <Route path="/login" element={<LoginPage />} />
-  <Route path="/" element={<PrivateRoute><VerifyPage /></PrivateRoute>} />
+  <Route path="/" element={<PrivateRoute><HomePage /></PrivateRoute>} />
+ <Route path="/verify" element={<PrivateRoute><VerifyPage /></PrivateRoute>} />
   <Route path="/report" element={<PrivateRoute><ReportPage /></PrivateRoute>} />
   <Route path="/dashboard" element={<PrivateRoute><ResellerDashboard /></PrivateRoute>} />
   <Route path="/contact" element={<ContactPage />} />
