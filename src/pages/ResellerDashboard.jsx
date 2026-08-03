@@ -49,7 +49,8 @@ function ResellerDashboard() {
 
       {reports.length === 0 ? (
         <div className="empty-state">Aucun signalement pour le moment.</div>
-      ) : (
+      ):(
+        <div className="table-scroll">
         <table className="data-table">
           <thead>
             <tr>
@@ -78,6 +79,7 @@ function ResellerDashboard() {
             ))}
           </tbody>
         </table>
+        </div>
       )}
     </div>
   );
