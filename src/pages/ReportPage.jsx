@@ -21,14 +21,14 @@ function ReportPage() {
     formData.append("proof", proof);
 
     try {
-      const response = await api.post("/reports", formData, {
-        headers: { "Content-Type": "multipart/form-data" },
-      });
+      const response = await api.post('/reports', formData);
+      setMessage(`Signalement enregistré — statut : ${response.data.status}`);
       setMessage(`Signalement enregistré — statut : ${response.data.status}`);
       setImei("");
       setCircumstances("");
       setProof(null);
-    } catch (err) {
+    }
+     catch (err) {
       setError(err.response?.data?.error || "Erreur lors du signalement");
     } finally {
       setLoading(false);
