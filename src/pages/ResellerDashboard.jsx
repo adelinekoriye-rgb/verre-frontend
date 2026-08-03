@@ -80,7 +80,7 @@ function ResellerDashboard() {
           </tbody>
         </table>
         </div>
-      )}
+      )}r
     </div>
   );
 }
