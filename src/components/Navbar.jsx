@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="navbar-brand" style={{ textDecoration: 'none' }}>WoilaTech</Link>
+      <Link to="/" className="navbar-brand" style={{ textDecoration: 'none' }}>VERRA</Link>
       {loggedIn ? (
         <>
           <Link to="/verify">Vérifier</Link>

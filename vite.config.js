@@ -10,8 +10,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg'],
       manifest: {
-        name: 'WoilaTech — Registre communautaire',
-        short_name: 'WoilaTech',
+        name: 'VERRA — Registre communautaire',
+        short_name: 'VERRA',
         description: 'Signalez et vérifiez un IMEI de téléphone volé',
         theme_color: '#14213D',
         background_color: '#FAF9F6',

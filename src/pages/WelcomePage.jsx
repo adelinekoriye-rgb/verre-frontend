@@ -7,7 +7,7 @@ function WelcomePage() {
       {/* Hero */}
       <section className="landing-hero">
         <div className="landing-brand">
-          <div className="brand-name">WoilaTech</div>
+          <div className="brand-name">VERRA</div>
         </div>
         <h1 className="hero-title">Le registre communautaire<br />des téléphones volés</h1>
         <p className="hero-subtitle">
