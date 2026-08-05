@@ -749,3 +749,63 @@
   border-color: var(--pending);
   color: var(--pending);
 }
+
+/* Filtres du dashboard */
+.dashboard-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.dashboard-filters input[type="text"] {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 14px;
+  border: 1.5px solid var(--line);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: white;
+  color: var(--ink);
+}
+
+.dashboard-filters select {
+  padding: 10px 14px;
+  border: 1.5px solid var(--line);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: white;
+  color: var(--ink);
+}
+
+.dashboard-filters input:focus,
+.dashboard-filters select:focus {
+  border-color: var(--ink);
+  outline: none;
+}
+
+.btn-ghost-light {
+  background: none;
+  border: 1.5px solid var(--line);
+  color: var(--ink);
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.btn-ghost-light:hover {
+  border-color: var(--ink);
+}
+
+@media (max-width: 640px) {
+  .dashboard-filters {
+    flex-direction: column;
+  }
+  .dashboard-filters input,
+  .dashboard-filters select,
+  .dashboard-filters button {
+    width: 100%;
+  }
+}
