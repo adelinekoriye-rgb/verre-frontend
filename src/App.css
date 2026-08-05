@@ -809,3 +809,42 @@
     width: 100%;
   }
 }
+
+/* Statistiques */
+.stats-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.stats-summary-card {
+  background: var(--ink);
+  border-radius: 8px;
+  padding: 22px 20px;
+  text-align: center;
+}
+
+.stats-summary-number {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--paper);
+}
+
+.stats-summary-label {
+  font-size: 0.85rem;
+  color: rgba(250, 249, 246, 0.65);
+  margin-top: 4px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.stats-chart-title {
+  font-size: 1rem;
+  margin-bottom: 16px;
+}

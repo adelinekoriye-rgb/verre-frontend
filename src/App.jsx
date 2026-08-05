@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
+import StatsPage from './pages/StatsPage';
 import "./App.css";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
  <Route path="/verify" element={<PrivateRoute><VerifyPage /></PrivateRoute>} />
   <Route path="/report" element={<PrivateRoute><ReportPage /></PrivateRoute>} />
   <Route path="/dashboard" element={<PrivateRoute><ResellerDashboard /></PrivateRoute>} />
+  <Route path="/stats" element={<PrivateRoute><StatsPage /></PrivateRoute>} />
   <Route path="/contact" element={<ContactPage />} />
 </Routes>
       <Footer />
